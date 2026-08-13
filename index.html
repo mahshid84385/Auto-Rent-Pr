@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auto Rent</title>
-    <script type="module" crossorigin src="/Auto-Rent-Pr/assets/index-DNL5GHcS.js"></script>
-    <link rel="stylesheet" crossorigin href="/Auto-Rent-Pr/assets/index-CSjXHXdz.css">
+    <script type="module" crossorigin src="/Auto-Rent-Pr/assets/index-DkDYygdW.js"></script>
+    <link rel="stylesheet" crossorigin href="/Auto-Rent-Pr/assets/index-B91JXkYp.css">
   </head>
   <body class="m-0 bg-[#f8f8f8] overflow-x-hidden">
     <section class="relative">
@@ -23,145 +23,117 @@
 
         <!-- Navbar --><!-- Header -->
         <!-- Header -->
-<header
-  class="absolute top-5 left-1/2 -translate-x-1/2 w-[92%] z-50"
->
-  <div
-    class="
-      min-h-[72px]
-      bg-white
-      rounded-[22px]
-      shadow-lg
-      flex
-      items-center
-      justify-between
-      px-10
+<header class="w-full bg-white relative z-50">
 
-      max-[1200px]:px-6
+  <!-- ردیف اصلی هدر -->
+  <div class="w-full px-4 md:px-10 py-4 flex items-center justify-between gap-4">
 
-      max-[768px]:min-h-[58px]
-      max-[768px]:px-4
-      max-[768px]:rounded-[18px]
-    "
-  >
+    <!-- سمت راست: همبرگری + لوگو -->
+    <div class="flex items-center gap-4">
 
-    <!-- Logo -->
-    <img
-      src="/Auto-Rent-Pr/assets/Logo%20(1)-czuO4xF4.png"
-      class="
-        w-[95px]
-        shrink-0
-
-        max-[1200px]:w-[85px]
-
-        max-[768px]:w-[65px]
-      "
-      alt="Auto Rent"
-    />
-
-
-    <!-- Menu -->
-    <ul
-      class="
-        flex
-        items-center
-        gap-9
-        text-[15px]
-        font-medium
-        whitespace-nowrap
-
-        max-[1400px]:gap-6
-        max-[1200px]:gap-4
-
-        max-[992px]:hidden
-      "
-    >
-      <li class="hover:text-yellow-500 duration-300 cursor-pointer">
-        رزرو خودرو
-      </li>
-
-      <li class="hover:text-yellow-500 duration-300 cursor-pointer">
-        خدمات ما
-      </li>
-
-      <li class="hover:text-yellow-500 duration-300 cursor-pointer">
-        بلاگ
-      </li>
-
-      <li class="hover:text-yellow-500 duration-300 cursor-pointer">
-        درباره ما
-      </li>
-
-      <li class="hover:text-yellow-500 duration-300 cursor-pointer">
-        تماس با ما
-      </li>
-    </ul>
-
-
-    <!-- Left -->
-    <div
-      class="
-        flex
-        items-center
-        gap-6
-        shrink-0
-
-        max-[1200px]:gap-4
-
-        max-[768px]:gap-2
-      "
-    >
-
-      <!-- Search -->
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="
-          w-6
-          h-6
-          cursor-pointer
-
-          max-[768px]:w-5
-          max-[768px]:h-5
-        "
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 100-15 7.5 7.5 0 000 15z"
-        />
-      </svg>
-
-
-      <!-- Login Button -->
+      <!-- دکمه همبرگری - فقط موبایل -->
       <button
-        class="
-          bg-[#2457ff]
-          text-white
-          px-7
-          py-2.5
-          rounded-xl
-          text-[16px]
-          whitespace-nowrap
+        id="menuBtn"
+        class="md:hidden text-2xl flex items-center justify-center"
+        type="button"
+      >
+        ☰
+      </button>
 
-          max-[1200px]:px-5
-          max-[1200px]:text-[14px]
+      <!-- لوگو -->
+      <a href="/" class="flex items-center">
+        <img
+          src="/Auto-Rent-Pr/assets/Logo%20(1)-czuO4xF4.png"
+          alt="Auto Rent"
+          class="w-[90px] md:w-[110px]"
+        />
+      </a>
 
-          max-[768px]:px-3
-          max-[768px]:py-2
-          max-[768px]:text-[11px]
-          max-[768px]:rounded-lg
-        "
+    </div>
+
+
+    <!-- منوی دسکتاپ -->
+    <nav class="hidden md:flex items-center gap-8">
+
+      <a href="#" class="text-gray-700 hover:text-orange-500">
+        رزرو خودرو
+      </a>
+
+      <a href="#" class="text-gray-700 hover:text-orange-500">
+        خدمات ما
+      </a>
+
+      <a href="#" class="text-gray-700 hover:text-orange-500">
+        بلاگ
+      </a>
+
+      <a href="#" class="text-gray-700 hover:text-orange-500">
+        درباره ما
+      </a>
+
+      <a href="#" class="text-gray-700 hover:text-orange-500">
+        تماس با ما
+      </a>
+
+    </nav>
+
+
+    <!-- سمت چپ: جستجو + ورود -->
+    <div class="flex items-center gap-3">
+
+      <!-- آیکون سرچ -->
+      <button
+        type="button"
+        class="text-2xl"
+      >
+        🔍
+      </button>
+
+      <!-- ورود / ثبت نام -->
+      <a
+        href="#"
+        class="bg-blue-600 text-white px-4 py-2 rounded-xl text-sm md:text-base whitespace-nowrap"
       >
         ورود / ثبت نام
-      </button>
+      </a>
 
     </div>
 
   </div>
+
+
+  <!-- منوی موبایل -->
+  <nav
+    id="mobileMenu"
+    class="hidden md:hidden w-full bg-white border-t border-gray-200 shadow-lg"
+  >
+
+    <div class="flex flex-col text-right px-6 py-4 gap-4">
+
+      <a href="#" class="text-gray-700 py-2">
+        رزرو خودرو
+      </a>
+
+      <a href="#" class="text-gray-700 py-2">
+        خدمات ما
+      </a>
+
+      <a href="#" class="text-gray-700 py-2">
+        بلاگ
+      </a>
+
+      <a href="#" class="text-gray-700 py-2">
+        درباره ما
+      </a>
+
+      <a href="#" class="text-gray-700 py-2">
+        تماس با ما
+      </a>
+
+    </div>
+
+  </nav>
+
 </header>
 
        <!-- Hero Content -->

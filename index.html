@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auto Rent</title>
-    <script type="module" crossorigin src="/Auto-Rent-Pr/assets/index-DkDYygdW.js"></script>
-    <link rel="stylesheet" crossorigin href="/Auto-Rent-Pr/assets/index-B91JXkYp.css">
+    <script type="module" crossorigin src="/Auto-Rent-Pr/assets/index-CTuqrhUk.js"></script>
+    <link rel="stylesheet" crossorigin href="/Auto-Rent-Pr/assets/index-D9YT5932.css">
   </head>
   <body class="m-0 bg-[#f8f8f8] overflow-x-hidden">
     <section class="relative">
@@ -23,79 +23,135 @@
 
         <!-- Navbar --><!-- Header -->
         <!-- Header -->
-<header class="w-full bg-white relative z-50">
+<!-- Header -->
+<header class="absolute top-5 left-1/2 -translate-x-1/2 w-[92%] z-50">
 
-  <!-- ردیف اصلی هدر -->
-  <div class="w-full px-4 md:px-10 py-4 flex items-center justify-between gap-4">
+  <div
+    class="h-[72px]
+    max-[1200px]:h-[66px]
+    max-[992px]:h-[60px]
+    bg-white
+    rounded-[22px]
+    shadow-lg
+    flex items-center justify-between
+    px-10
+    max-[1200px]:px-6
+    max-[992px]:px-4"
+  >
 
-    <!-- سمت راست: همبرگری + لوگو -->
-    <div class="flex items-center gap-4">
+    <!-- سمت راست در موبایل: همبرگری + لوگو -->
+    <div class="flex items-center gap-3">
 
-      <!-- دکمه همبرگری - فقط موبایل -->
+      <!-- دکمه همبرگری فقط موبایل -->
       <button
         id="menuBtn"
-        class="md:hidden text-2xl flex items-center justify-center"
         type="button"
+        class="hidden max-[768px]:flex items-center justify-center text-2xl w-9 h-9"
       >
         ☰
       </button>
 
       <!-- لوگو -->
-      <a href="/" class="flex items-center">
-        <img
-          src="/Auto-Rent-Pr/assets/Logo%20(1)-czuO4xF4.png"
-          alt="Auto Rent"
-          class="w-[90px] md:w-[110px]"
-        />
-      </a>
+      <img
+        src="/Auto-Rent-Pr/assets/Logo%20(1)-czuO4xF4.png"
+        class="w-[95px]
+        max-[1200px]:w-[85px]
+        max-[992px]:w-[75px]
+        max-[768px]:w-[70px]
+        shrink-0"
+        alt="Auto Rent"
+      />
 
     </div>
 
 
     <!-- منوی دسکتاپ -->
-    <nav class="hidden md:flex items-center gap-8">
+    <ul
+      class="flex items-center gap-9
+      max-[1400px]:gap-6
+      max-[1200px]:gap-4
+      max-[992px]:gap-2
+      max-[768px]:hidden
+      text-[15px]
+      max-[1200px]:text-[14px]
+      max-[992px]:text-[13px]
+      font-medium
+      whitespace-nowrap"
+    >
 
-      <a href="#" class="text-gray-700 hover:text-orange-500">
+      <li class="hover:text-yellow-500 duration-300 cursor-pointer">
         رزرو خودرو
-      </a>
+      </li>
 
-      <a href="#" class="text-gray-700 hover:text-orange-500">
+      <li class="hover:text-yellow-500 duration-300 cursor-pointer">
         خدمات ما
-      </a>
+      </li>
 
-      <a href="#" class="text-gray-700 hover:text-orange-500">
+      <li class="hover:text-yellow-500 duration-300 cursor-pointer">
         بلاگ
-      </a>
+      </li>
 
-      <a href="#" class="text-gray-700 hover:text-orange-500">
+      <li class="hover:text-yellow-500 duration-300 cursor-pointer">
         درباره ما
-      </a>
+      </li>
 
-      <a href="#" class="text-gray-700 hover:text-orange-500">
+      <li class="hover:text-yellow-500 duration-300 cursor-pointer">
         تماس با ما
-      </a>
+      </li>
 
-    </nav>
+    </ul>
 
 
-    <!-- سمت چپ: جستجو + ورود -->
-    <div class="flex items-center gap-3">
+    <!-- سمت چپ: سرچ + ورود -->
+    <div
+      class="flex items-center gap-6
+      max-[1200px]:gap-4
+      max-[992px]:gap-2
+      shrink-0"
+    >
 
-      <!-- آیکون سرچ -->
-      <button
-        type="button"
-        class="text-2xl"
+      <!-- Search -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6
+        max-[768px]:w-5
+        max-[768px]:h-5
+        cursor-pointer"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
       >
-        🔍
-      </button>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 100-15 7.5 7.5 0 000 15z"
+        />
+      </svg>
+
 
       <!-- ورود / ثبت نام -->
-      <a
-        href="#"
-        class="bg-blue-600 text-white px-4 py-2 rounded-xl text-sm md:text-base whitespace-nowrap"
+      <button
+        class="bg-[#2457ff]
+        text-white
+        px-7
+        max-[1200px]:px-5
+        max-[992px]:px-3
+        max-[768px]:px-3
+        py-2.5
+        max-[992px]:py-2
+        max-[768px]:py-2
+        rounded-xl
+        text-[16px]
+        max-[1200px]:text-[14px]
+        max-[992px]:text-[13px]
+        max-[768px]:text-[11px]
+        whitespace-nowrap
+        hover:bg-blue-700
+        duration-300"
       >
         ورود / ثبت نام
-      </a>
+      </button>
 
     </div>
 
@@ -103,36 +159,36 @@
 
 
   <!-- منوی موبایل -->
-  <nav
+  <div
     id="mobileMenu"
-    class="hidden md:hidden w-full bg-white border-t border-gray-200 shadow-lg"
+    class="hidden max-[768px]:block bg-white mt-2 rounded-[18px] shadow-lg overflow-hidden"
   >
 
-    <div class="flex flex-col text-right px-6 py-4 gap-4">
+    <ul class="flex flex-col text-right">
 
-      <a href="#" class="text-gray-700 py-2">
+      <li class="px-6 py-4 border-b border-gray-100 hover:bg-gray-50">
         رزرو خودرو
-      </a>
+      </li>
 
-      <a href="#" class="text-gray-700 py-2">
+      <li class="px-6 py-4 border-b border-gray-100 hover:bg-gray-50">
         خدمات ما
-      </a>
+      </li>
 
-      <a href="#" class="text-gray-700 py-2">
+      <li class="px-6 py-4 border-b border-gray-100 hover:bg-gray-50">
         بلاگ
-      </a>
+      </li>
 
-      <a href="#" class="text-gray-700 py-2">
+      <li class="px-6 py-4 border-b border-gray-100 hover:bg-gray-50">
         درباره ما
-      </a>
+      </li>
 
-      <a href="#" class="text-gray-700 py-2">
+      <li class="px-6 py-4 hover:bg-gray-50">
         تماس با ما
-      </a>
+      </li>
 
-    </div>
+    </ul>
 
-  </nav>
+  </div>
 
 </header>
 

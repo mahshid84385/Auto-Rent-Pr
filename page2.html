@@ -25,73 +25,172 @@
         <div class="absolute inset-0 bg-black/45"></div>
 
         <!-- Header -->
-        <header class="absolute top-5 left-1/2 -translate-x-1/2 w-[92%] z-50">
-          <div
-            class="h-[72px] max-[1200px]:h-[66px] max-[992px]:h-[60px] bg-white rounded-[22px] shadow-lg flex items-center justify-between px-10 max-[1200px]:px-6 max-[992px]:px-4"
-          >
-            <!-- Logo -->
-            <img
-              src="./src/images/Logo.png"
-              class="w-[95px] max-[1200px]:w-[85px] max-[992px]:w-[75px] shrink-0"
-              alt=""
-            />
+       <header class="absolute top-5 left-1/2 -translate-x-1/2 w-[92%] z-50">
 
-            <!-- Menu -->
-            <ul
-              class="flex items-center gap-9 max-[1400px]:gap-6 max-[1200px]:gap-4 max-[992px]:gap-2 text-[15px] max-[1200px]:text-[14px] max-[992px]:text-[13px] font-medium whitespace-nowrap"
-            >
-              <li class="hover:text-yellow-500 duration-300 cursor-pointer">
-                رزرو خودرو
-              </li>
+  <div
+    class="h-[72px]
+    max-[1200px]:h-[66px]
+    max-[992px]:h-[60px]
+    bg-white
+    rounded-[22px]
+    shadow-lg
+    flex items-center justify-between
+    px-10
+    max-[1200px]:px-6
+    max-[992px]:px-4"
+  >
 
-              <li class="hover:text-yellow-500 duration-300 cursor-pointer">
-                خدمات ما
-              </li>
+    <div class="flex items-center gap-3">
 
-              <li class="hover:text-yellow-500 duration-300 cursor-pointer">
-                بلاگ
-              </li>
+     
+      <button
+        id="menuBtn"
+        type="button"
+        class="hidden max-[768px]:flex items-center justify-center text-2xl w-9 h-9"
+      >
+        ☰
+      </button>
 
-              <li class="hover:text-yellow-500 duration-300 cursor-pointer">
-                درباره ما
-              </li>
+      <!-- لوگو -->
+      <img
+        src="./src/images/Logo (1).png"
+        class="w-[95px]
+        max-[1200px]:w-[85px]
+        max-[992px]:w-[75px]
+        max-[768px]:w-[70px]
+        shrink-0"
+        alt="Auto Rent"
+      />
 
-              <li class="hover:text-yellow-500 duration-300 cursor-pointer">
-                تماس با ما
-              </li>
-            </ul>
+    </div>
 
-            <!-- Left -->
-            <div
-              class="flex items-center gap-6 max-[1200px]:gap-4 max-[992px]:gap-2 shrink-0"
-            >
-              <!-- Search -->
 
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-6 h-6 cursor-pointer"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 100-15 7.5 7.5 0 000 15z"
-                />
-              </svg>
+    <!-- منوی دسکتاپ -->
+    <ul
+      class="flex items-center gap-9
+      max-[1400px]:gap-6
+      max-[1200px]:gap-4
+      max-[992px]:gap-2
+      max-[768px]:hidden
+      text-[15px]
+      max-[1200px]:text-[14px]
+      max-[992px]:text-[13px]
+      font-medium
+      whitespace-nowrap"
+    >
 
-              <!-- Button -->
+      <li class="hover:text-yellow-500 duration-300 cursor-pointer">
+        رزرو خودرو
+      </li>
 
-              <button
-                class="bg-[#2457ff] text-white px-7 max-[1200px]:px-5 max-[992px]:px-3 py-2.5 max-[992px]:py-2 rounded-xl text-[16px] max-[1200px]:text-[14px] max-[992px]:text-[13px] whitespace-nowrap hover:bg-blue-700 duration-300"
-              >
-                ورود / ثبت نام
-              </button>
-            </div>
-          </div>
-        </header>
+      <li class="hover:text-yellow-500 duration-300 cursor-pointer">
+        خدمات ما
+      </li>
+
+      <li class="hover:text-yellow-500 duration-300 cursor-pointer">
+        بلاگ
+      </li>
+
+      <li class="hover:text-yellow-500 duration-300 cursor-pointer">
+        درباره ما
+      </li>
+
+      <li class="hover:text-yellow-500 duration-300 cursor-pointer">
+        تماس با ما
+      </li>
+
+    </ul>
+
+
+    <div
+      class="flex items-center gap-6
+      max-[1200px]:gap-4
+      max-[992px]:gap-2
+      shrink-0"
+    >
+
+      <!-- Search -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6
+        max-[768px]:w-5
+        max-[768px]:h-5
+        cursor-pointer"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 100-15 7.5 7.5 0 000 15z"
+        />
+      </svg>
+
+
+      <!-- ورود / ثبت نام -->
+      <button
+        class="bg-[#2457ff]
+        text-white
+        px-7
+        max-[1200px]:px-5
+        max-[992px]:px-3
+        max-[768px]:px-3
+        py-2.5
+        max-[992px]:py-2
+        max-[768px]:py-2
+        rounded-xl
+        text-[16px]
+        max-[1200px]:text-[14px]
+        max-[992px]:text-[13px]
+        max-[768px]:text-[11px]
+        whitespace-nowrap
+        hover:bg-blue-700
+        duration-300"
+      >
+        ورود / ثبت نام
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- منوی موبایل -->
+  <div
+  id="mobileMenu"
+  class="hidden bg-white mt-2 rounded-[18px] shadow-lg overflow-hidden"
+>
+
+    <ul class="flex flex-col text-right">
+
+      <li class="px-6 py-4 border-b border-gray-100 hover:bg-gray-50">
+        رزرو خودرو
+      </li>
+
+      <li class="px-6 py-4 border-b border-gray-100 hover:bg-gray-50">
+        خدمات ما
+      </li>
+
+      <li class="px-6 py-4 border-b border-gray-100 hover:bg-gray-50">
+        بلاگ
+      </li>
+
+      <li class="px-6 py-4 border-b border-gray-100 hover:bg-gray-50">
+        درباره ما
+      </li>
+
+      <li class="px-6 py-4 hover:bg-gray-50">
+        تماس با ما
+      </li>
+
+    </ul>
+
+  </div>
+
+</header>
+
 
         <!-- Hero Text -->
 

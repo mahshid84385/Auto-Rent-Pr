@@ -3,5 +3,5 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [tailwindcss()],
-  base: "/Auto-Rent-pr/",
+  base: "/Auto-Rent-Pr/",
 });
